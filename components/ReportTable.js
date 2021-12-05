@@ -29,7 +29,7 @@ export default function ReportTable(props) {
                   })}
 
                   <td className="border border-collapse border-gray-900">
-                    {props.totalperday}
+                    {item.hourly_sales.reduce((a, b) => a + b, 0)}
                   </td>
                 </tr>
               );
